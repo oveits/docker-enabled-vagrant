@@ -51,7 +51,8 @@ sudo cat <<-HOSTNAME > /etc/hostname
   localhost
 HOSTNAME
 
-cat <<-EOBASHRC  >> /home/vagrant/.bashrc
+#cat <<-EOBASHRC  >> /home/vagrant/.bashrc
+cat <<-EOBASHRC  >> ~/.bashrc
   export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
   export LC_CTYPE=C.UTF-8
 EOBASHRC
