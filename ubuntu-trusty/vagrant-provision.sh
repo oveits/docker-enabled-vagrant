@@ -79,8 +79,8 @@ sudo apt-get install -y curl unzip
 # install Docker
 curl -sSL https://get.docker.com/ | sudo sh
 
-# add 'vagrant' user to docker group
-sudo usermod -aG docker vagrant
+# add current user ('vagrant' in most cases, but may be different on Amazon AWS) user to docker group
+sudo usermod -aG docker `whoami`
 
 # enable memory and swap accounting
 sed -i -e \
